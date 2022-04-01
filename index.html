@@ -28,21 +28,90 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
       <!-- Timeblocks go here -->
       <div class="row">
         <div class="col-md-1 hour">
           <p>9:00AM</p>
         </div>
-        <div class="col-md-10 time-block">
-          <input type="text" id="text-area" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        <div class="col-md-10 time-block nine-block">
+          <input type="text" id="text-area-9" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="col-md-1 saveBtn" id="save-btn" >
+          <i class="fas fa-save" data-time="9" ></i>
+        </div>
+     </div>
+
+     <div class="row">
+      <div class="col-md-1 hour">
+        <p>10:00AM</p>
+      </div>
+      <div class="col-md-10 time-block ten-block">
+        <input type="text" id="text-area-10" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="col-md-1 saveBtn" id="save-btn">
+        <i class="fas fa-save" data-time="10"></i>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1 hour">
+          <p>11:00AM</p>
+        </div>
+        <div class="col-md-10 time-block eleven-block">
+          <input type="text" id="text-area-11" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
         </div>
         <div class="col-md-1 saveBtn" id="save-btn">
-          <i class="fas fa-save"></i>
+          <i class="fas fa-save" data-time="11"></i>
         </div>
+  
+        <div class="row">
+          <div class="col-md-1 hour">
+            <p>Noon</p>
+          </div>
+          <div class="col-md-10 time-block noon-block">
+            <input type="text" id="text-area-12" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          </div>
+          <div class="col-md-1 saveBtn" id="save-btn">
+            <i class="fas fa-save" data-time="12"></i>
+          </div>
 
+          <div class="row">
+            <div class="col-md-1 hour">
+              <p>1:00PM</p>
+            </div>
+            <div class="col-md-10 time-block one-block">
+              <input type="text" id="text-area-1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="col-md-1 saveBtn" id="save-btn">
+              <i class="fas fa-save" data-time="1"></i>
+            </div>
+      
+          <div class="row">
+              <div class="col-md-1 hour">
+                <p>2:00PM</p>
+              </div>
+              <div class="col-md-10 time-block two-block">
+                <input type="text" id="text-area-2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="col-md-1 saveBtn" id="save-btn">
+                <i class="fas fa-save" data-time="2"></i>
+            </div>
+
+            <div class="row">
+              <div class="col-md-1 hour">
+                  <p>3:00PM</p>
+                </div>
+                <div class="col-md-10 time-block three-block">
+                  <input type="text" id="text-area-1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="col-md-1 saveBtn" id="save-btn">
+                  <i class="fas fa-save" data-time="3"></i>
+            </div>
+      
+
+   </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="Assets/script.js"></script>
