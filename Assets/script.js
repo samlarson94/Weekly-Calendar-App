@@ -23,13 +23,69 @@ var currentDay = document.getElementById("currentDay");
     //if clicked, save text contents of textEntered in that particular box to local storage
     //load any saved data from local storage to display as text on page, under the correct hour box
 
-    function renderLastEvent() { //COPY THIS FOR ALL TEXT AREAS
+    function renderNineEvent() { //COPY THIS FOR ALL TEXT AREAS
         var nineAm = localStorage.getItem("text-area-9");
         console.log(nineAm);
         document.getElementById("text-area-9").value = nineAm;
     }
-    renderLastEvent();
+    renderNineEvent();
+
+    function renderTenEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var tenAm = localStorage.getItem("text-area-10");
+        console.log(tenAm);
+        document.getElementById("text-area-10").value = tenAm;
+    }
+    renderTenEvent();
     
+    function renderElevenEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var elevenAm = localStorage.getItem("text-area-11");
+        console.log(elevenAm);
+        document.getElementById("text-area-11").value = elevenAm;
+    }
+    renderElevenEvent();
+
+    function renderNoonEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var noon = localStorage.getItem("text-area-10");
+        console.log(noon);
+        document.getElementById("text-area-12").value = noon;
+    }
+    renderNoonEvent();
+
+    function renderOneEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var onePm = localStorage.getItem("text-area-1");
+        console.log(onePm);
+        document.getElementById("text-area-1").value = onePm;
+    }
+    renderOneEvent();
+
+    function renderTwoEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var twoPm = localStorage.getItem("text-area-2");
+
+        document.getElementById("text-area-2").value = twoPm;
+    }
+    renderTwoEvent();
+
+    function renderThreeEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var threePm = localStorage.getItem("text-area-3");
+        document.getElementById("text-area-3").value = threePm;
+    }
+    renderThreeEvent();
+
+    function renderFourEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var fourPm = localStorage.getItem("text-area-4");
+        
+        document.getElementById("text-area-4").value = fourPm;
+    }
+    renderFourEvent();
+
+    function renderFiveEvent() { //COPY THIS FOR ALL TEXT AREAS
+        var fivePm = localStorage.getItem("text-area-5");
+        document.getElementById("text-area-5").value = fivePm;
+    }
+    renderFiveEvent();
+
+
+
 // }
 //Function to track time and color-code timeblock classes
     //Display day, month, day in jumbotron using Moment.js
@@ -113,8 +169,8 @@ var nineBlock = moment(),
     };
 
     var oneBlock = moment(), 
-    beforeTime = moment('01:00:00', format),
-    afterTime = moment('01:59:59', format);
+    beforeTime = moment('13:00:00', format),
+    afterTime = moment('13:59:59', format);
 
     if (oneBlock.isBetween(beforeTime, afterTime)) {
         console.log('is within 1');
@@ -131,8 +187,8 @@ var nineBlock = moment(),
     };
 
     var twoBlock = moment(), 
-    beforeTime = moment('02:00:00', format),
-    afterTime = moment('02:59:59', format);
+    beforeTime = moment('14:00:00', format),
+    afterTime = moment('14:59:59', format);
 
     if (twoBlock.isBetween(beforeTime, afterTime)) {
         console.log('is within 2');
@@ -148,65 +204,60 @@ var nineBlock = moment(),
        
     };
 
+    var threeBlock = moment(), 
+    beforeTime = moment('15:00:00', format),
+    afterTime = moment('15:59:59', format);
 
-    ///Start Here
-
-    var oneBlock = moment(), 
-    beforeTime = moment('01:00:00', format),
-    afterTime = moment('01:59:59', format);
-
-    if (oneBlock.isBetween(beforeTime, afterTime)) {
-        console.log('is within 1');
-        $(".one-block").addClass("present");
+    if (threeBlock.isBetween(beforeTime, afterTime)) {
+        console.log('is within 3');
+        $(".three-block").addClass("present");
        
-    }else if(oneBlock.isAfter(afterTime)) {
-        console.log('is after 1')
-        $(".one-block").addClass("past");
+    }else if(threeBlock.isAfter(afterTime)) {
+        console.log('is after 3')
+        $(".three-block").addClass("past");
      
-    }else if(oneBlock.isBefore(beforeTime)) {
-        console.log('is before 1')
-        $(".one-block").addClass("future");
+    }else if(threeBlock.isBefore(beforeTime)) {
+        console.log('is before 3')
+        $(".three-block").addClass("future");
        
     };
 
-    var oneBlock = moment(), 
-    beforeTime = moment('01:00:00', format),
-    afterTime = moment('01:59:59', format);
+    var fourBlock = moment(), 
+    beforeTime = moment('16:00:00', format),
+    afterTime = moment('16:59:59', format);
 
-    if (oneBlock.isBetween(beforeTime, afterTime)) {
-        console.log('is within 1');
-        $(".one-block").addClass("present");
+    if (fourBlock.isBetween(beforeTime, afterTime)) {
+        console.log('is within 4');
+        $(".four-block").addClass("present");
        
-    }else if(oneBlock.isAfter(afterTime)) {
-        console.log('is after 1')
-        $(".one-block").addClass("past");
+    }else if(fourBlock.isAfter(afterTime)) {
+        console.log('is after 4')
+        $(".four-block").addClass("past");
      
-    }else if(oneBlock.isBefore(beforeTime)) {
-        console.log('is before 1')
-        $(".one-block").addClass("future");
+    }else if(fourBlock.isBefore(beforeTime)) {
+        console.log('is before 4')
+        $(".four-block").addClass("future");
        
     };
 
-    var oneBlock = moment(), 
-    beforeTime = moment('01:00:00', format),
-    afterTime = moment('01:59:59', format);
+    var fiveBlock = moment(), 
+    beforeTime = moment('17:00:00', format),
+    afterTime = moment('17:59:59', format);
 
-    if (oneBlock.isBetween(beforeTime, afterTime)) {
-        console.log('is within 1');
-        $(".one-block").addClass("present");
+    if (fiveBlock.isBetween(beforeTime, afterTime)) {
+        console.log('is within 5');
+        $(".five-block").addClass("present");
        
-    }else if(oneBlock.isAfter(afterTime)) {
-        console.log('is after 1')
-        $(".one-block").addClass("past");
+    }else if(fiveBlock.isAfter(afterTime)) {
+        console.log('is after 5')
+        $(".five-block").addClass("past");
      
-    }else if(oneBlock.isBefore(beforeTime)) {
-        console.log('is before 1')
-        $(".one-block").addClass("future");
+    }else if(fiveBlock.isBefore(beforeTime)) {
+        console.log('is before 5')
+        $(".five-block").addClass("future");
        
     };
     
-    //COPY AND PAST FOR ALL TIMEBLOCKS
-    //COPY AND PAST FOR ALL TIMEBLOCKS
 
     //Initializer function to load items on local storage when page is loaded
 
