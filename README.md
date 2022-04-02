@@ -1,33 +1,16 @@
 # Weekly-Calendar-App
+Deployed Application: https://samlarson94.github.io/Weekly-Calendar-App/
 
-#Psuedo-Coding
-    HTML:
-    - Hour Column and Save Button
-    - 9 rows for 9 hours in between
-    - 
-
-Link everything with CSS Classes
-
-Create basic HTML to resemble mockup
-    - Create 9 rows with 3 columns each.
-    - Time column = size 1
-    - Hour column = size 10
-    - Save button = size 1
+# Project Details
+- Built to practice using javascript libraries (moment.js) and css libraries (bootstrap)
+- Moment JS is utilized as the date utility library to show the present date, keep track of the current time, and color code corresponding timeblocks to show present, past, and future. 
+- Application saves user input to local storage, and then will render saved input upon refresh.
 
 
-- Set up an event handler for our save button
-    - Listen for clicks on each time block's save button, then save to local storage
-    - Load any saved data from local storage (to display on page, or can we do this in bootstrap?)
+Screenshots:
 
-- Figure out how to create our text area within rows (look on Bootstrap)
+Enter Text and Press Save Icon to save to local storage to save event
+![Screen Shot 2022-04-02 at 10 56 55 AM](https://user-images.githubusercontent.com/24683662/161391180-7399a25a-a4ce-4c70-9e22-3aaa3ec37d62.png)
 
-JS Function to track our hours and color code our timeblocks
-
-- Display the day, month, and the day of month. Check Moment.js for exact format. 
-- Moment.js, figure out formatting (time interval 9AM-9:59AM)
-    - Figure out how to grab an entire hour.  Use startof function. 
-
-- Color coding of time blocks
-    - If current hour > time block hur set it to past (gray - check CSS class)
-    - If current hour === time block hour set it to present (red - check CSS class)
-    - Otherwise set time blocks to the future (green - check CSS class)
+Enter multiple events and save to display your workday
+![Screen Shot 2022-04-02 at 10 57 40 AM](https://user-images.githubusercontent.com/24683662/161391250-638d96c3-3474-40db-81a5-61d9065d0dc2.png)
